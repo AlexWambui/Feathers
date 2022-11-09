@@ -4,7 +4,80 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: black;
   color: #fafafa;
+}
+
+section {
+  padding-top: 3em;
+}
+section .container h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*with slider*/
+.Hero {
+  height: 92vh;
+  background-image: linear-gradient(rgba(102, 97, 27, 0.8), rgba(0, 0, 0, 0.9)), url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Hero .text h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.Hero .text p {
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.About .container .about_us .about {
+  text-align: center;
+}
+.About .container .about_us .about h1 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1024px) {
+  .About .container .about_us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 3%;
+         column-gap: 3%;
+  }
+  .About .container .about_us .about h1 {
+    border-bottom: 1px solid #efefef;
+  }
+}
+.Services .container p {
+  text-align: center;
+}
+.Services .container .services_wrapper .service {
+  width: 90%;
+  margin: auto;
+}
+.Services .container .services_wrapper .service .img img {
+  height: 100%;
+  width: 100%;
+}
+.Services .container .services_wrapper .service .text h1 {
+  font-size: 1.2em;
+  padding: 12px;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=styles.css.map */
