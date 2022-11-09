@@ -13,6 +13,7 @@ html{
 body{
     background: $background_color;
     color: $color;  
+    font-family: sans-serif, helvetica;
 }
 
 
@@ -22,6 +23,8 @@ section{
         h1{
             font-weight: bold;
             text-align: center;
+            font-size: 2em;
+            border-bottom: 1px solid orange;            
         }
     }
 }
@@ -45,6 +48,7 @@ section{
 //     }
 // }
 .Hero{
+    padding-top: 0px;
     height: 92vh;
     background-image: linear-gradient(rgba(102, 97, 27, 0.8), rgba(0,0,0,0.9)), url("../images/hero.jpg");
     background-size: cover;
@@ -59,7 +63,7 @@ section{
             font-size: 2.5em;
             font-weight: bold;
             text-transform: uppercase;
-            text-align: center;
+            text-align: center;        
         }
         p{
             text-align: center;
@@ -78,6 +82,7 @@ section{
                     font-size: 1.2em;
                     text-transform: uppercase;
                     letter-spacing: 1px;
+                    border-bottom: unset;
                 }
             }
         }
@@ -118,8 +123,8 @@ section{
                 .text{
                     h1{
                         font-size: 1.2em;
-                        padding: 12px;
                         letter-spacing: 1px;
+                        border-bottom: unset;
                     }
                 }
             }            
