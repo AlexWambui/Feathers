@@ -157,8 +157,6 @@ section{
 
 .Contact{
     .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         .contacts{
             h1{
                 text-transform: uppercase;
@@ -172,21 +170,41 @@ section{
                     list-style: none;
                     li{
                         margin: 3% 0px;
-                        font-size: 1.2em;
                         background: #efefef;
                         color: #000;
                         border-radius: 32px;
                         padding: 8px 32px;
-                        width: 60%;
+                        width: 100%;
                     }
                 }
             }            
         }
         .contact_image{
-            text-align: center;
-            img{
-                height: 100%;
-                width: 80%;
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 1024px){
+    .Contact{
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;    
+            .contacts{
+                .socials{
+                    ul{
+                        li{
+                            width: 60%;
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+            .contact_image{
+                text-align: center;
+                img{
+                    height: 100%;
+                    width: 80%;
+                }
             }
         }
     }

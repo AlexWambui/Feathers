@@ -103,10 +103,6 @@ section .container h1 {
     border: 1px solid white;
   }
 }
-.Contact .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 .Contact .container .contacts h1 {
   text-transform: uppercase;
   font-size: 2.1em;
@@ -119,21 +115,33 @@ section .container h1 {
 }
 .Contact .container .contacts .socials ul li {
   margin: 3% 0px;
-  font-size: 1.2em;
   background: #efefef;
   color: #000;
   border-radius: 32px;
   padding: 8px 32px;
-  width: 60%;
+  width: 100%;
 }
 .Contact .container .contact_image {
-  text-align: center;
-}
-.Contact .container .contact_image img {
-  height: 100%;
-  width: 80%;
+  display: none;
 }
 
+@media screen and (min-width: 1024px) {
+  .Contact .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Contact .container .contacts .socials ul li {
+    width: 60%;
+    font-size: 1.2em;
+  }
+  .Contact .container .contact_image {
+    text-align: center;
+  }
+  .Contact .container .contact_image img {
+    height: 100%;
+    width: 80%;
+  }
+}
 .Footer {
   border-top: 1px solid #efefef;
   padding: 12px 0px;
