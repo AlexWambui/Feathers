@@ -24,7 +24,8 @@ section{
             font-weight: bold;
             text-align: center;
             font-size: 2em;
-            border-bottom: 1px solid orange;            
+            border-bottom: 1px solid white;             
+            color: orange;         
         }
     }
 }
@@ -93,6 +94,7 @@ section{
                     text-transform: uppercase;
                     letter-spacing: 1px;
                     border-bottom: unset;
+                    color: #fafafa;
                 }
             }
         }
@@ -135,6 +137,7 @@ section{
                         font-size: 1.2em;
                         letter-spacing: 1px;
                         border-bottom: unset;
+                        color: #efefef;
                     }
                 }
             }            

@@ -21,7 +21,8 @@ section .container h1 {
   font-weight: bold;
   text-align: center;
   font-size: 2em;
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid white;
+  color: orange;
 }
 
 @media screen and (min-width: 1024px) {
@@ -64,6 +65,7 @@ section .container h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   border-bottom: unset;
+  color: #fafafa;
 }
 
 @media screen and (min-width: 1024px) {
@@ -92,6 +94,7 @@ section .container h1 {
   font-size: 1.2em;
   letter-spacing: 1px;
   border-bottom: unset;
+  color: #efefef;
 }
 
 @media screen and (min-width: 1024px) {
